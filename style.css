@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #e1e2e6;
+}
+.container {
+    max-width: 1200px;
+    margin: 0  auto;
+}
+
+.header {
+    background-image: linear-gradient(
+        rgba(14, 14, 14, 0.9), rgba(18, 17, 17, 0.9)
+    ),
+    url("https://pdm.com.co/wp-content/uploads/2023/07/Superconductor-1038x576.jpg?x73281");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+    top: 0px; 
+    position: relative;
+    margin-top: 30px; 
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: -1px; 
+    right: 0;
+    width: 100vw;
+    min-width: 100vw;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px 0 0 0;
+    background: rgba(10, 11, 11, 0.92);
+    z-index: 1000;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 8px #000;
+    align-self: flex-start;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.menu .navbar {
+    margin-left: 0;
+    margin-right: 0;
+}
+.menu .navbar ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    justify-content: flex-end;
+}
+
+.menu .navbar ul li a {
+    font-size: 15px;
+    display: block;
+    color: #00b94a;
+    font-weight: 700;
+    padding: 8px 35px;
+}
+
+.menu .navbar ul li a:hover {
+    color: rgb(54, 165, 13);
+    transition: 0.3s;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+} 
+.menu label{
+    cursor: pointer; 
+    display: none;
+}
+
+.header-content {
+    text-align: center;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px 30px 32px 30px;
+}
+
+.header-content h1 {
+    font-size: 60px;
+    line-height: 1.1;
+    letter-spacing: 10px;
+    color: #0aae07;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    padding: 0 10px;
+    text-align: center;
+    font-weight: 900;
+    text-shadow: 3px 3px 16px #000, 0 2px 8px #0aae07;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content p {
+    font-size: 17px;
+    color: #C5C5C5;
+    padding: 0 50px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.btn-1{
+    display: inline-block;
+    padding: 11px 35px;
+    background: #703518;
+    color: #F9FAFC;
+    text-transform: uppercase ;
+}
+.btn-1:hover{
+    background-color: #0b0b0b;
+}
+
+.superconductores {
+    padding: 100px 0;
+    background-color: #e1e2e6;
+    position: relative;
+}
+
+.superconductores-content {
+    text-align: center;
+}
+.superconductores-content h2 {
+    font-size: 35px;
+    color: #0aae07;
+    margin-bottom: 20px;
+    padding: 0 75px;
+    line-height: 70px;
+    text-transform: uppercase;
+}
+
+.txt-p {
+    font-size: 16px;
+    color: #233fc7;
+    padding: 0 250px;
+    margin-bottom: 35px;
+}
+.superconductores-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.superconductores-1 img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.superconductores-img {
+    top: 0;
+    right: 0;
+}
+
+.superconductores > img {
+    display: block;
+    margin: -80px auto 10px auto; /* Sube la imagen un poco */
+    width: 40%;
+    max-width: 480px;
+    height: auto;
+    border-radius: 24px;
+    object-fit: cover;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.13);
+}
+
+.superconductores-tipo {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 40px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.tipo-card {
+    background: #bab9b9;
+    border-radius: 18px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+    padding: 32px 18px 24px 18px;
+    max-width: 340px;
+    min-width: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.3s, transform 0.3s;
+    text-align: center;
+}
+.tipo-card:hover {
+    box-shadow: 0 8px 32px #0aae07a0;
+    transform: translateY(-8px) scale(1.04);
+}
+.tipo-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 16px;
+    object-fit: cover;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.13);
+    /* SUBE AQUÍ tus imágenes: tipo1.jpg y tipo2.jpg */
+}
+.tipo-card h3 {
+    color: #0aae07;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.tipo-card p {
+    color: #232323;
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+
+.carousel-aplicaciones {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    min-height: 350px; /* Asegura espacio para el contenido */
+    margin: 40px auto 50px auto;
+    overflow: hidden;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.13);
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s cubic-bezier(.4,0,.2,1);
+    width: 100%;
+    height: 100%;
+}
+.carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 24px 18px 18px 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.carousel-imgbox {
+    width: 320px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+    background: #e1e2e6;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.13);
+}
+.carousel-imgbox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    background: #e1e2e6;
+}
+.carousel-caption {
+    text-align: center;
+    margin-top: 10px;
+    color: #232323;
+    background: rgba(255,255,255,0.92); 
+    border-radius: 10px;
+    padding: 12px 10px 8px 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    width: 100%;
+    max-width: 420px;
+}
+.carousel-caption h3 {
+    color: #0aae07;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+.carousel-caption p {
+    color: #232323;
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #0aae07;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 2;
+    opacity: 0.8;
+    transition: background 0.2s;
+}
+.carousel-btn:hover {
+    background: #015824;
+}
+.carousel-btn.prev {
+    left: 10px;
+}
+.carousel-btn.next {
+    right: 10px;
+}
+
+
+.general {
+    padding: 60px 0 40px 0;
+    background: none;
+}
+
+.general-1 {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.articulos-investigacion {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 32px;
+}
+
+.articulo {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    padding: 24px 20px 18px 20px;
+    margin-bottom: 0;
+}
+
+.articulo h3 {
+    color: #0aae07;
+    margin-bottom: 10px;
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.articulo p {
+    color: #232323;
+    margin-bottom: 12px;
+    font-size: 1rem;
+}
+
+
+.blog-videos {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.blog-video-card {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    padding: 18px 14px 14px 14px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog-video-card h3 {
+    color: #0aae07;
+    font-size: 1.05rem;
+    margin-top: 12px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.fundamento-quimico {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    padding: 36px 28px 28px 28px;
+    margin: 40px auto 40px auto;
+    max-width: 900px;
+    color: #232323;
+}
+
+.fundamento-quimico h2 {
+    color: #0aae07;
+    font-size: 2rem;
+    margin-bottom: 18px;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.fundamento-quimico p {
+    font-size: 1.08rem;
+    margin-bottom: 16px;
+    color: #232323;
+    line-height: 1.6;
+}
+
+.fundamento-quimico ul {
+    margin-bottom: 18px;
+    padding-left: 24px;
+}
+
+.fundamento-quimico li {
+    margin-bottom: 12px;
+    font-size: 1.05rem;
+    color: #015824;
+    background: #e1e2e6;
+    border-radius: 8px;
+    padding: 10px 14px;
+    list-style: disc inside;
+}
+
+.fundamento-quimico strong {
+    color: #0aae07;
+    font-weight: 700;
+}
+
+.footer {
+    background: #232323;
+    color: #fff;
+    padding: 40px 0 20px 0;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.footer .link {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.footer h3 {
+    color: #0aae07;
+    font-size: 1.2rem;
+    margin-bottom: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.footer ul {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.2s;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    color: #0aae07;
+    text-decoration: underline;
+}
+
+.footer .link {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+@media (max-width: 700px) {
+    .footer .link {
+        padding: 0 10px;
+    }
+    .footer {
+        padding: 32px 0 16px 0;
+    }
+}
+
+
+
+
+
